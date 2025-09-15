@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Envío de Correo</title>
+  <!-- Enlace a hoja de estilos institucional -->
+  <link rel="stylesheet" href="css/Ejercicio4.css" />
+</head>
+<body>
+  <!-- Encabezado institucional -->
+  <header>
+    <h1>Enviar Correo Electrónico</h1>
+  </header>
+
+  <!-- Formulario principal con diseño tipo Gmail -->
+  <form id="formCorreo" onsubmit="return validarFormulario()">
+    <div class="form-horizontal">
+      <!-- Campo: De -->
+      <div class="campo">
+        <label for="nombreDe">De:</label>
+        <input type="text" id="nombreDe" placeholder="Nombre" onfocus="resaltar(this)" onblur="validarNombre(this)" />
+        <input type="email" id="correoDe" placeholder="Correo" onfocus="resaltar(this)" onblur="validarCorreo(this)" />
+      </div>
+
+      <!-- Campo: Para -->
+      <div class="campo">
+        <label for="nombrePara">Para:</label>
+        <input type="text" id="nombrePara" placeholder="Nombre" onfocus="resaltar(this)" onblur="validarNombre(this)" />
+        <input type="email" id="correoPara" placeholder="Correo" onfocus="resaltar(this)" onblur="validarCorreo(this)" />
+      </div>
+
+      <!-- Campo: CC -->
+      <div class="campo">
+        <label for="nombreCC">CC:</label>
+        <input type="text" id="nombreCC" placeholder="Nombre" onfocus="resaltar(this)" onblur="validarNombre(this)" />
+        <input type="email" id="correoCC" placeholder="Correo" onfocus="resaltar(this)" onblur="validarCorreo(this)" />
+      </div>
+
+      <!-- Campo: CCO -->
+      <div class="campo">
+        <label for="nombreCCO">CCO:</label>
+        <input type="text" id="nombreCCO" placeholder="Nombre" onfocus="resaltar(this)" onblur="validarNombre(this)" />
+        <input type="email" id="correoCCO" placeholder="Correo" onfocus="resaltar(this)" onblur="validarCorreo(this)" />
+      </div>
+
+      <!-- Campo: Asunto -->
+      <div class="campo">
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" placeholder="Agregar un asunto" onfocus="resaltar(this)" onblur="validarTexto(this)" />
+      </div>
+
+      <!-- Campo: Mensaje -->
+      <div class="campo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="8" placeholder="Escriba su mensaje aquí..." onfocus="resaltar(this)" onblur="validarTexto(this)"></textarea>
+      </div>
+
+      <!-- Campo: Adjuntar archivo -->
+      <div class="campo">
+        <label for="archivo">Adjuntar archivo:</label>
+        <input type="file" id="archivo" accept=".jpg,.png,.pdf,.docx" onfocus="resaltar(this)" onblur="validarArchivo(this)" />
+      </div>
+
+      <!-- Botón de envío -->
+      <div class="boton-enviar">
+        <button type="submit">Enviar</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- Pantalla de resumen (oculta al inicio) -->
+  <section id="resumen" style="display: none;">
+    <h2>Resumen del Correo Enviado</h2>
+    <div id="datosResumen"></div>
+    <button onclick="volver()">Volver</button>
+  </section>
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="js/Ejercicio4.js"></script>
+</body>
+</html>

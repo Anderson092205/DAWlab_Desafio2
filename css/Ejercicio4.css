@@ -1,0 +1,137 @@
+/* === Reset básico === */
+/* Elimina márgenes y define fuente profesional */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* === Encabezado institucional === */
+header {
+  background-color: #0078d7;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* === Formulario principal === */
+/* Contenedor general del formulario */
+form {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* === Diseño horizontal tipo Gmail === */
+/* Agrupa todos los campos en una sola vista */
+.form-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* === Campo individual === */
+/* Cada línea de entrada con su etiqueta */
+.campo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.campo label {
+  min-width: 80px;
+  font-weight: bold;
+  color: #0078d7;
+}
+
+/* === Campos de entrada === */
+/* Estilo para inputs y textarea */
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* === Área de texto === */
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+/* === Botón de envío === */
+/* Estilo institucional para el botón */
+.boton-enviar {
+  text-align: right;
+}
+
+button[type="submit"],
+button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* === Validación visual === */
+/* Se aplica cuando el campo está en foco */
+input:focus,
+textarea:focus {
+  border-color: #0078d7;
+  outline: none;
+  background-color: #eef6ff;
+}
+
+/* === Mensajes de error === */
+/* Estilo para campos inválidos */
+.error {
+  border-color: red !important;
+  background-color: #ffe6e6 !important;
+}
+
+/* Estilo para campos válidos */
+.correcto {
+  border-color: green !important;
+  background-color: #e6ffe6 !important;
+}
+
+/* === Pantalla de resumen === */
+/* Contenedor del resumen final */
+#resumen {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f0f8ff;
+  border: 2px solid #0078d7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* === Contenido del resumen === */
+#datosResumen {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+#datosResumen strong {
+  color: #0078d7;
+}
