@@ -1,0 +1,128 @@
+/* === Reset básico === */
+/* Elimina márgenes por defecto y define fuente institucional */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Encabezado institucional === */
+/* Barra superior con título y botón de cambio de tema */
+header {
+  background-color: #0078d7;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Navegación entre secciones === */
+/* Menú horizontal con botones para CPU, Memoria, Disco y Ethernet */
+nav {
+  background-color: #f1f1f1;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.tab-btn {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* === Contenido principal === */
+/* Área donde se muestran las métricas de cada sección */
+main {
+  padding: 1rem;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* === Métricas individuales === */
+/* Estilo para cada línea de información como uso, velocidad, etc. */
+.metric {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+/* === Validación con expresiones regulares === */
+/* Sección para ingresar y validar una IP */
+#validacion {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 2px solid #ccc;
+}
+
+#ipInput {
+  padding: 0.5rem;
+  width: 250px;
+  margin-right: 0.5rem;
+}
+
+#resultadoValidacion {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* === Temas visuales === */
+/* Estilos para modo claro y oscuro */
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.dark-theme {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-theme header {
+  background-color: #333;
+}
+
+.dark-theme nav {
+  background-color: #2a2a2a;
+}
+
+.dark-theme .tab-btn {
+  background-color: #444;
+  color: white;
+}
+
+/* === Gráficas simuladas de rendimiento === */
+/* Barras que crecen o decrecen según el valor de uso */
+.grafica {
+  background-color: #ccc;
+  height: 20px;
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.barra {
+  height: 100%;
+  background-color: #0078d7;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+/* Color alternativo para barras en modo oscuro */
+.dark-theme .barra {
+  background-color: #00bfff;
+}
+/* === Fin del CSS === */
