@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.banner {
+  text-align: center;
+  background-color: #ffcc00;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.banner img {
+  width: 60px;
+  margin-top: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.formulario {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.btn-guardar {
+  margin-top: 15px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ahora-suena {
+  flex: 1;
+  background-color: #e6f9e6;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #000000;
+}
+
+#coverImage {
+  display: none; /* Oculto por defecto */
+  margin: 20px auto;
+  width: 200px;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+
+table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.btn-play {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-play:hover {
+  background-color: #c82333;
+}
+
+.boton-libros {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-libros {
+  background-color: #42b817;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-libros:hover {
+  background-color: #13962f;
+}
+
+
+

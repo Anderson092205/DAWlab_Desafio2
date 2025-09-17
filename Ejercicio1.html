@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Información del libro</title>
+  <link rel="stylesheet" href="css/Ejercicio1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Información del libro</h1>
+    <form id="bookForm">
+      <div class="form-group">
+        <label><i class="fas fa-user"></i> Autor:</label>
+        <input type="text" id="autor" required />
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-book"></i> Título:</label>
+        <input type="text" id="titulo" required />
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-building"></i> Editorial:</label>
+        <input type="text" id="editorial" required />
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-hashtag"></i> Edición:</label>
+        <input type="text" id="edicion" required />
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-flag"></i> País:</label>
+        <input type="text" id="pais" required />
+      </div>
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+
+    <h2>Lista autores</h2>
+    <table id="tablaAutores">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Título</th>
+          <th>Autor</th>
+          <th>Editorial</th>
+          <th>Edición</th>
+          <th>País</th>
+          <th>Operaciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  
+  <div class="boton-navegacion">
+  <a href="Ejercicio1_part2.html" class="btn-navegacion">Ir Agregar Canción</a>
+</div>
+
+
+
+  <script src="js/Ejercicio1.js"></script>
+</body>
+</html>

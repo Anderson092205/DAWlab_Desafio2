@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista Musical de JavaScript</title>
+  <link rel="stylesheet" href="css/Ejercicio1_part2.css" />
+</head>
+<body>
+  <div class="banner">
+    <h1>Lista Musical de JavaScript</h1>
+  </div>
+
+  <div class="main">
+    <form id="musicForm" class="formulario">
+      <label>Canción:</label>
+      <input type="text" id="cancion" required />
+
+      <label>Cantante:</label>
+      <input type="text" id="cantante" required />
+
+      <label>Discográfica:</label>
+      <input type="text" id="discografica" required />
+
+      <label>Duración:</label>
+      <input type="text" id="duracion" required />
+
+      <label>Nacionalidad:</label>
+      <input type="text" id="nacionalidad" required />
+
+      <button type="submit" class="btn-guardar">Guardar</button>
+    </form>
+
+    <div class="ahora-suena" id="ahoraSuena">
+      <h2>Ahora Suena...</h2>
+      <img id="coverImage" src="https://i.blogs.es/1c35de/equalizer/450_1000.webp" alt="Cover" />
+      <p id="infoCancion">Selecciona una canción para reproducir</p>
+    </div>
+  </div>
+
+  <table id="tablaMusica">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Canción</th>
+        <th>Cantante</th>
+        <th>Discográfica</th>
+        <th>Duración</th>
+        <th>Nacionalidad</th>
+        <th>Operaciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+ <div class="boton-libros">
+<a href="Ejercicio1.html" class="btn-libros">Ir Agregar Libros</a>
+</div>
+
+
+
+  <script src="js/Ejercicio1_part2.js"></script>
+</body>
+</html>
