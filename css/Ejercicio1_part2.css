@@ -1,3 +1,4 @@
+/* Estilo general del cuerpo de la página */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -5,6 +6,7 @@ body {
   padding: 20px;
 }
 
+/* Banner superior con fondo llamativo y texto centrado */
 .banner {
   text-align: center;
   background-color: #ffcc00;
@@ -12,11 +14,13 @@ body {
   border-radius: 8px;
 }
 
+/* Imagen dentro del banner, con tamaño reducido y margen superior */
 .banner img {
   width: 60px;
   margin-top: 10px;
 }
 
+/* Contenedor principal con disposición horizontal y espacio entre secciones */
 .main {
   display: flex;
   justify-content: space-between;
@@ -24,6 +28,7 @@ body {
   gap: 20px;
 }
 
+/* Sección del formulario con fondo blanco y bordes redondeados */
 .formulario {
   flex: 1;
   background-color: white;
@@ -31,12 +36,14 @@ body {
   border-radius: 8px;
 }
 
+/* Etiquetas del formulario con espaciado y énfasis en negrita */
 .formulario label {
   display: block;
   margin-top: 10px;
   font-weight: bold;
 }
 
+/* Campos de entrada del formulario con ancho completo y espaciado interno */
 .formulario input {
   width: 100%;
   padding: 8px;
@@ -44,6 +51,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Botón para guardar datos del formulario con estilo verde y texto blanco */
 .btn-guardar {
   margin-top: 15px;
   background-color: #28a745;
@@ -56,6 +64,7 @@ body {
   cursor: pointer;
 }
 
+/* Sección que muestra la canción actual con fondo verde claro y borde negro */
 .ahora-suena {
   flex: 1;
   background-color: #e6f9e6;
@@ -65,15 +74,16 @@ body {
   border: 2px solid #000000;
 }
 
+/* Imagen de portada de la canción, oculta por defecto y con transición suave */
 #coverImage {
-  display: none; /* Oculto por defecto */
+  display: none;
   margin: 20px auto;
   width: 200px;
   max-width: 100%;
   transition: all 0.3s ease;
 }
 
-
+/* Tabla que muestra las canciones agregadas, con fondo blanco y bordes colapsados */
 table {
   width: 100%;
   margin-top: 30px;
@@ -81,17 +91,20 @@ table {
   background-color: white;
 }
 
+/* Encabezado de la tabla con fondo azul y texto blanco */
 thead {
   background-color: #007bff;
   color: white;
 }
 
+/* Celdas de la tabla con espaciado interno, borde gris y texto centrado */
 th, td {
   padding: 10px;
   border: 1px solid #ccc;
   text-align: center;
 }
 
+/* Botón para reproducir canción con fondo rojo y estilo redondeado */
 .btn-play {
   background-color: #dc3545;
   color: white;
@@ -101,15 +114,18 @@ th, td {
   border-radius: 4px;
 }
 
+/* Efecto hover para el botón de reproducción, con tono rojo más oscuro */
 .btn-play:hover {
   background-color: #c82333;
 }
 
+/* Contenedor del botón para ver libros, centrado y con margen superior */
 .boton-libros {
   margin-top: 20px;
   text-align: center;
 }
 
+/* Botón para ver libros con fondo verde, texto blanco y estilo redondeado */
 .btn-libros {
   background-color: #42b817;
   color: white;
@@ -121,9 +137,11 @@ th, td {
   text-decoration: none;
 }
 
+/* Efecto hover para el botón de libros, con verde más intenso */
 .btn-libros:hover {
   background-color: #13962f;
 }
+
 
 
 

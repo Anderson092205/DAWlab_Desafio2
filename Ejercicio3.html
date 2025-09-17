@@ -5,26 +5,36 @@
   <title>Lista de Palabras</title>
   <link rel="stylesheet" href="css/Ejercicio3.css">
 </head>
+<!-- Inicio del cuerpo del documento -->
 <body>
-    <header>
-        <h1>Lista de Palabras</h1>
-        <p>Busca una Palabra a través de expresiones regulares</p>
-    </header>
 
+  <!-- Encabezado principal con título y descripción -->
+  <header>
+    <h1>Lista de Palabras</h1>
+    <p>Busca una Palabra a través de expresiones regulares</p>
+  </header>
+
+  <!-- Contenedor principal con dos columnas: búsqueda y resultado -->
   <div class="contenedor">
+
+    <!-- Columna izquierda: campo de búsqueda y lista de coincidencias -->
     <div class="izquierda">
       <label for="buscador">Escribe una palabra:</label>
-      <input type="text" id="buscador"  autocomplete="off">
-      <ul id="lista"></ul>
+      <input type="text" id="buscador" autocomplete="off" />
+      <ul id="lista"></ul> <!-- Lista dinámica de palabras filtradas -->
     </div>
 
+    <!-- Columna derecha: botón para mostrar significado y área de resultado -->
     <div class="derecha">
       <button id="mostrar">Mostrar Significado</button>
-      <div id="significado"></div>
+      <div id="significado"></div> <!-- Aquí se muestra el significado de la palabra seleccionada -->
     </div>
   </div>
 
+  <!-- Enlace al archivo JavaScript que contiene la lógica de búsqueda y selección -->
   <script src="js/Ejercicio3.js"></script>
+
 </body>
 </html>
+
 

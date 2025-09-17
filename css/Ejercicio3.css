@@ -1,3 +1,4 @@
+/* Estilos generales del cuerpo: fuente legible, fondo blanco, texto centrado */
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -7,22 +8,26 @@ body {
   text-align: center;
 }
 
+/* Encabezado con fondo verde oscuro y texto blanco */
 header {
   background-color: #027d5d;
   color: white;
   padding: 20px 0;
 }
 
+/* Título principal del encabezado con tamaño grande y sin margen */
 header h1 {
   font-size: 3rem;
   margin: 0;
 }
 
+/* Subtítulo del encabezado con tamaño mediano y margen superior */
 header p {
   font-size: 2rem;
   margin: 10px 0 0;
 }
 
+/* Contenedor principal con diseño flexible, centrado y con espacio entre columnas */
 .contenedor {
   display: flex;
   justify-content: center;
@@ -32,11 +37,13 @@ header p {
   margin-top: 40px;
 }
 
+/* Columnas izquierda y derecha con ancho máximo y adaptable */
 .izquierda, .derecha {
   max-width: 400px;
   width: 100%;
 }
 
+/* Etiquetas de formulario en bloque, con tamaño grande y negrita */
 label {
   display: block;
   margin-bottom: 12px;
@@ -44,6 +51,7 @@ label {
   font-weight: bold;
 }
 
+/* Campos de entrada con ancho completo, padding y bordes redondeados */
 input {
   width: 100%;
   padding: 12px;
@@ -52,6 +60,7 @@ input {
   border-radius: 6px;
 }
 
+/* Lista sin viñetas, con borde, redondeado y scroll vertical si excede altura */
 ul {
   list-style: none;
   padding: 0;
@@ -63,6 +72,7 @@ ul {
   overflow-y: auto;
 }
 
+/* Elementos de lista con padding, borde inferior y efecto hover */
 li {
   padding: 10px;
   border-bottom: 1px solid #eee;
@@ -71,14 +81,17 @@ li {
   transition: background-color 0.2s;
 }
 
+/* Cambio de fondo al pasar el cursor sobre un elemento de lista */
 li:hover {
   background-color: #f2f2f2;
 }
 
+/* Estilo para el elemento seleccionado en la lista */
 .selected {
   background-color: #e0f7e0;
 }
 
+/* Botón con estilo verde, texto blanco y bordes redondeados */
 button {
   margin-bottom: 20px;
   padding: 12px 20px;
@@ -90,10 +103,12 @@ button {
   cursor: pointer;
 }
 
+/* Efecto hover para el botón con tono verde más oscuro */
 button:hover {
   background-color: #45a049;
 }
 
+/* Contenedor para mostrar el significado con borde azul y fondo suave */
 #significado {
   padding: 20px;
   border: 3px solid #2196F3;

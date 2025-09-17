@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lista Musical de JavaScript</title>
-  <link rel="stylesheet" href="css/Ejercicio1_part2.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lista Musical de JavaScript</title>
+ <link rel="stylesheet" href="css/Ejercicio1_part2.css" />
 </head>
 <body>
+
+  <!-- Banner superior con título principal -->
   <div class="banner">
     <h1>Lista Musical de JavaScript</h1>
   </div>
 
+  <!-- Contenedor principal con formulario y sección de reproducción -->
   <div class="main">
+
+    <!-- Formulario para ingresar datos de la canción -->
     <form id="musicForm" class="formulario">
       <label>Canción:</label>
       <input type="text" id="cancion" required />
@@ -28,9 +33,11 @@
       <label>Nacionalidad:</label>
       <input type="text" id="nacionalidad" required />
 
+      <!-- Botón para guardar la canción en la tabla -->
       <button type="submit" class="btn-guardar">Guardar</button>
     </form>
 
+    <!-- Sección que muestra la canción actual y su imagen -->
     <div class="ahora-suena" id="ahoraSuena">
       <h2>Ahora Suena...</h2>
       <img id="coverImage" src="https://i.blogs.es/1c35de/equalizer/450_1000.webp" alt="Cover" />
@@ -38,6 +45,7 @@
     </div>
   </div>
 
+  <!-- Tabla donde se listan las canciones ingresadas -->
   <table id="tablaMusica">
     <thead>
       <tr>
@@ -50,12 +58,19 @@
         <th>Operaciones</th>
       </tr>
     </thead>
-    <tbody></tbody>
+    <tbody></tbody> <!-- Cuerpo dinámico de la tabla -->
   </table>
 
- <div class="boton-libros">
-<a href="Ejercicio1.html" class="btn-libros">Ir Agregar Libros</a>
-</div>
+  <!-- Botón para navegar a la sección de libros -->
+  <div class="boton-libros">
+    <a href="Ejercicio1.html" class="btn-libros">Ir Agregar Libros</a>
+  </div>
+
+  <!-- Enlace al archivo JavaScript que contiene la lógica de interacción -->
+  <script src="js/Ejercicio1_part2.js"></script>
+</body>
+</html>
+
 
 
 

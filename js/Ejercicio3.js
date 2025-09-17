@@ -89,24 +89,21 @@ const significadoDiv = document.getElementById('significado');
 
 let palabraSeleccionada = null;
 
-buscador.addEventListener('input', () => {
-  const filtro = buscador.value.toLowerCase();
-  lista.innerHTML = '';
-  Object.keys(palabrasInfo).forEach(palabra => {
-    if (palabra.toLowerCase().includes(filtro)) {
-      const li = document.createElement('li');
-      li.textContent = palabra;
-      li.addEventListener('click', () => {
-        palabraSeleccionada = palabra;
-        buscador.value = palabra; // Copia al input
-        document.querySelectorAll('li').forEach(el => el.classList.remove('selected'));
-        li.classList.add('selected');
-      });
-      lista.appendChild(li);
-    }
-  });
+// Mostrar todas las palabras al cargar la página
+window.addEventListener('DOMContentLoaded', () => {
+  mostrarLista(Object.keys(palabrasInfo));
 });
 
+// Filtrar palabras al escribir
+buscador.addEventListener('input', () => {
+  const filtro = buscador.value.toLowerCase();
+  const filtradas = Object.keys(palabrasInfo).filter(palabra =>
+    palabra.toLowerCase().includes(filtro)
+  );
+  mostrarLista(filtradas);
+});
+
+// Mostrar significado al hacer clic en el botón
 mostrarBtn.addEventListener('click', () => {
   if (palabraSeleccionada) {
     significadoDiv.textContent = palabrasInfo[palabraSeleccionada];
@@ -114,4 +111,22 @@ mostrarBtn.addEventListener('click', () => {
     significadoDiv.textContent = 'Selecciona una palabra primero.';
   }
 });
+
+// Función para mostrar lista de palabras
+function mostrarLista(palabras) {
+  lista.innerHTML = '';
+  palabras.forEach(palabra => {
+    const li = document.createElement('li');
+    li.textContent = palabra;
+    li.addEventListener('click', () => {
+      palabraSeleccionada = palabra;
+      buscador.value = palabra;
+      document.querySelectorAll('li').forEach(el => el.classList.remove('selected'));
+      li.classList.add('selected');
+    });
+    lista.appendChild(li);
+  });
+}
+
+
 

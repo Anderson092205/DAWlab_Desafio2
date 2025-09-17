@@ -1,9 +1,11 @@
+/* Estilo base del cuerpo: fuente legible, fondo gris claro y espaciado interno */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   padding: 20px;
 }
 
+/* Contenedor principal centrado con fondo blanco y bordes redondeados */
 .container {
   max-width: 800px;
   margin: auto;
@@ -12,32 +14,38 @@ body {
   border-radius: 8px;
 }
 
+/* Títulos centrados con color gris oscuro */
 h1, h2 {
   text-align: center;
   color: #333;
 }
 
+/* Grupo de formulario con margen inferior para separación entre campos */
 .form-group {
   margin-bottom: 15px;
 }
 
+/* Etiquetas del formulario en bloque, negrita y con espacio inferior */
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
+/* Íconos dentro de etiquetas con margen derecho y color gris medio */
 label i {
   margin-right: 5px;
   color: #555;
 }
 
+/* Campos de entrada con ancho completo y espaciado interno */
 input {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
 }
 
+/* Botón de envío con fondo verde, texto blanco y estilo redondeado */
 .btn-enviar {
   background-color: #28a745;
   color: white;
@@ -49,27 +57,32 @@ input {
   border-radius: 4px;
 }
 
+/* Efecto hover para el botón de envío con tono verde más oscuro */
 .btn-enviar:hover {
   background-color: #218838;
 }
 
+/* Tabla con ancho completo, sin separación entre bordes y margen superior */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
+/* Encabezado de la tabla con fondo azul y texto blanco */
 thead {
   background-color: #007bff;
   color: white;
 }
 
+/* Celdas de la tabla con espaciado interno, borde gris y texto centrado */
 th, td {
   padding: 10px;
   border: 1px solid #ccc;
   text-align: center;
 }
 
+/* Botón para eliminar con fondo rojo, texto blanco y bordes redondeados */
 .btn-eliminar {
   background-color: #dc3545;
   color: white;
@@ -79,15 +92,18 @@ th, td {
   border-radius: 4px;
 }
 
+/* Efecto hover para el botón de eliminar con rojo más intenso */
 .btn-eliminar:hover {
   background-color: #c82333;
 }
 
+/* Contenedor para navegación con margen superior y contenido centrado */
 .boton-navegacion {
   margin-top: 20px;
   text-align: center;
 }
 
+/* Botón de navegación con fondo verde, texto blanco y transición suave */
 .btn-navegacion {
   display: inline-block;
   background-color: #2cbe29;
@@ -101,8 +117,10 @@ th, td {
   transition: background-color 0.3s ease;
 }
 
+/* Efecto hover para el botón de navegación con verde más oscuro */
 .btn-navegacion:hover {
   background-color: #197904;
 }
+
 
 
